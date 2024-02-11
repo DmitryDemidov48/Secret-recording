@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/SecretScribe/%20/static/css/main.31d6cfe0.css",
-    "main.js": "/SecretScribe/%20/static/js/main.2586ba03.js",
-    "index.html": "/SecretScribe/%20/index.html",
-    "main.2586ba03.js.map": "/SecretScribe/%20/static/js/main.2586ba03.js.map"
+    "main.css": "/SecretScribe%20/static/css/main.31d6cfe0.css",
+    "main.js": "/SecretScribe%20/static/js/main.cabf11a7.js",
+    "index.html": "/SecretScribe%20/index.html",
+    "main.cabf11a7.js.map": "/SecretScribe%20/static/js/main.cabf11a7.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.2586ba03.js"
+    "static/js/main.cabf11a7.js"
   ]
 }
