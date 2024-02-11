@@ -11,8 +11,6 @@ const colors = {
     smoothTransition: '#1a1a1a', // Более плавный переход от серого к черному
 };
 
-// Стилизованный компонент для шапки сайта
-// Стилизованный компонент для шапки сайта
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
@@ -24,7 +22,7 @@ const HeaderContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: stretch;
-    padding: 10px;
+    
   }
 `;
 
@@ -34,10 +32,18 @@ const SiteName = styled.h2`
   margin: 0;
 `;
 
-// Стилизованный компонент для навигационной панели
+
 const Navigation = styled.div`
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 `;
+
 
 // Стилизованный компонент для ссылок-кнопок
 const ButtonLink = styled(Link)`
