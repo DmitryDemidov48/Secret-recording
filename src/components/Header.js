@@ -58,7 +58,7 @@ const Header = () => {
         <HeaderContainer>
             <SiteName>SecretScribe</SiteName>
             <Navigation>
-                <NavLink href="/">Home</NavLink>
+                <NavLink href="/SecretScribe">Home</NavLink>
                 <NavLink href="/login">Login</NavLink>
                 <NavLink href="/register">Register</NavLink>
                 <NavLink href="/info">Information</NavLink>
