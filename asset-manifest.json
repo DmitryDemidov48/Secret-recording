@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SecretScribe/static/css/main.e6c13ad2.css",
+    "main.js": "/SecretScribe/static/js/main.4fccb866.js",
+    "index.html": "/SecretScribe/index.html",
+    "main.e6c13ad2.css.map": "/SecretScribe/static/css/main.e6c13ad2.css.map",
+    "main.4fccb866.js.map": "/SecretScribe/static/js/main.4fccb866.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4fccb866.js"
+  ]
+}
