@@ -12,7 +12,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route exact path="/SecretScribe" element={<Home />} />
+                <Route exact path="/Secret-recording" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/info" element={<CipherInfo/>} />

@@ -56,9 +56,9 @@ const NavLink = styled.a`
 const Header = () => {
     return (
         <HeaderContainer>
-            <SiteName>SecretScribe</SiteName>
+            <SiteName>Secret recording/</SiteName>
             <Navigation>
-                <NavLink href="/SecretScribe">Home</NavLink>
+                <NavLink href="/Secret-recording">Home</NavLink>
                 <NavLink href="/login">Login</NavLink>
                 <NavLink href="/register">Register</NavLink>
                 <NavLink href="/info">Information</NavLink>
