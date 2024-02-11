@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/SecretScribe/static/css/main.e6c13ad2.css",
-    "main.js": "/SecretScribe/static/js/main.4fccb866.js",
+    "main.css": "/SecretScribe/static/css/main.31d6cfe0.css",
+    "main.js": "/SecretScribe/static/js/main.e13ae544.js",
     "index.html": "/SecretScribe/index.html",
-    "main.e6c13ad2.css.map": "/SecretScribe/static/css/main.e6c13ad2.css.map",
-    "main.4fccb866.js.map": "/SecretScribe/static/js/main.4fccb866.js.map"
+    "main.e13ae544.js.map": "/SecretScribe/static/js/main.e13ae544.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.4fccb866.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.e13ae544.js"
   ]
 }
