@@ -11,6 +11,7 @@ const colors = {
 };
 
 // Стилизованный компонент для шапки сайта
+// Стилизованный компонент для шапки сайта
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
@@ -18,7 +19,14 @@ const HeaderContainer = styled.div`
   background-color: ${colors.black};
   color: ${colors.green};
   padding: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
 `;
+
 
 // Стилизованный компонент для заголовка
 const SiteName = styled.h2`
@@ -56,14 +64,14 @@ const NavLink = styled.a`
 const Header = () => {
     return (
         <HeaderContainer>
-            <SiteName>Secret recording/</SiteName>
+            <SiteName>Secret recording</SiteName>
             <Navigation>
                 <NavLink href="/Secret-recording">Home</NavLink>
-                <NavLink href="/login">Login</NavLink>
-                <NavLink href="/register">Register</NavLink>
-                <NavLink href="/info">Information</NavLink>
-                <NavLink href="/encoder">Encoder</NavLink>
-                <NavLink href="/decoder">Decoder</NavLink>
+                <NavLink href="/Secret-recording/login">Login</NavLink>
+                <NavLink href="/Secret-recording/register">Register</NavLink>
+                <NavLink href="/Secret-recording/info">Information</NavLink>
+                <NavLink href="/Secret-recording/encoder">Encoder</NavLink>
+                <NavLink href="/Secret-recording/decoder">Decoder</NavLink>
             </Navigation>
         </HeaderContainer>
     );
