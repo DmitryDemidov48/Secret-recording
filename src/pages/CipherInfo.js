@@ -8,23 +8,30 @@ import {
     morseCipherInfo,
     vigenereCipherInfo
 } from '../Info/Info';
-const CardGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); // Три карточки в ряд
-  gap: 20px; // Промежуток между карточками
-`;
+
 // Цветовая палитра
 const colors = {
     black: '#000',
     green: '#00ff00',
     darkGreen: '#00cc00',
     darkGray: '#333',
-    smoothTransition: '#1a1a1a', // Более плавный переход от серого к черному
+    smoothTransition: '#1a1a1a',
 };
 
-// Стилизованный компонент для контейнера карточки
+// Стилизованный компонент для контейнера с карточками
+const CardGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); // Одна карточка в столбце на мобильных устройствах
+  gap: 20px; // Промежуток между карточками
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr); // Три карточки в ряд на устройствах с шириной экрана больше 768px
+  }
+`;
+
+// Стилизованный компонент для контейнера каждой карточки
 const CardContainer = styled.div`
-  width: 300px;
+  width: 100%;
   padding: 20px;
   background-color: ${colors.black};
   color: ${colors.green};
@@ -54,6 +61,7 @@ const CardLink = styled.a`
   }
 `;
 
+// Компонент для отображения информации о шифре
 const CipherInfo = ({ cipherInfo }) => {
     // Деструктурируем данные из объекта cipherInfo
     const { title, description, usage } = cipherInfo;
@@ -73,18 +81,17 @@ const CipherInfo = ({ cipherInfo }) => {
     );
 };
 
+// Главный компонент приложения
 const App = () => {
     return (
-        <>
-            <CardGrid>
-                <CipherInfo cipherInfo={caesarCipherInfo} />
-                <CipherInfo cipherInfo={affineCipherInfo} />
-                <CipherInfo cipherInfo={atbashCipherInfo} />
-                <CipherInfo cipherInfo={baconCipherInfo} />
-                <CipherInfo cipherInfo={morseCipherInfo} />
-                <CipherInfo cipherInfo={vigenereCipherInfo} />
-            </CardGrid>
-        </>
+        <CardGrid>
+            <CipherInfo cipherInfo={caesarCipherInfo} />
+            <CipherInfo cipherInfo={affineCipherInfo} />
+            <CipherInfo cipherInfo={atbashCipherInfo} />
+            <CipherInfo cipherInfo={baconCipherInfo} />
+            <CipherInfo cipherInfo={morseCipherInfo} />
+            <CipherInfo cipherInfo={vigenereCipherInfo} />
+        </CardGrid>
     );
 };
 
