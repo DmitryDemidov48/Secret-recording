@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 // Цветовая палитра
 const colors = {
@@ -39,7 +40,7 @@ const Navigation = styled.div`
 `;
 
 // Стилизованный компонент для ссылок-кнопок
-const NavLink = styled.a`
+const ButtonLink = styled(Link)`
   padding: 10px 20px;
   background-color: transparent;
   color: ${colors.green};
@@ -66,12 +67,12 @@ const Header = () => {
         <HeaderContainer>
             <SiteName>Secret recording</SiteName>
             <Navigation>
-                <NavLink href="/Secret-recording">Home</NavLink>
-                <NavLink href="/Secret-recording/login">Login</NavLink>
-                <NavLink href="/Secret-recording/register">Register</NavLink>
-                <NavLink href="/Secret-recording/info">Information</NavLink>
-                <NavLink href="/Secret-recording/encoder">Encoder</NavLink>
-                <NavLink href="/Secret-recording/decoder">Decoder</NavLink>
+                <ButtonLink to ="/Secret-recording">Home</ButtonLink>
+                <ButtonLink to="/login">Login</ButtonLink>
+                <ButtonLink to="/register">Register</ButtonLink>
+                <ButtonLink to="/info">Information</ButtonLink>
+                <ButtonLink to="/encoder">Encoder</ButtonLink>
+                <ButtonLink to="/decoder">Decoder</ButtonLink>
             </Navigation>
         </HeaderContainer>
     );
