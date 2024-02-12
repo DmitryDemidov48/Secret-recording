@@ -43,18 +43,18 @@ const EncryptContainer = () => {
             <Card>
                 <CaesarEncrypt />
             </Card>
-            <Card>
+           {/* <Card>
                 <VigenereEncrypt />
-            </Card>
+            </Card>*/}
             <Card>
                 <AtbashEncrypt/>
             </Card>
             <Card>
                 <MorseCipherEncrypt/>
             </Card>
-            <Card>
+           {/* <Card>
                 <BaconEncrypt/>
-            </Card>
+            </Card>*/}
         </Container>
     );
 };

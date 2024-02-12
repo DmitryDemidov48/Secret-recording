@@ -58,20 +58,7 @@ const Button = styled.button`
   }
 `;
 
-// Стили для контейнера с результатом
-const ResultContainer = styled.div`
-  background-color: #111;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #333;
-  margin-top: 20px; /* Добавляем отступ сверху */
-`;
 
-// Стили для текста результата
-const ResultText = styled.p`
-  font-size: 16px;
-  color: #fff;
-`;
 
 // Функция для расшифровки текста по шифру Цезаря
 const caesarDecipher = (text, shift) => {
@@ -121,10 +108,10 @@ const CaesarDecrypt = ({ onDecrypt }) => {
             </Form>
             {/* Отображение расшифрованного текста */}
             {decryptedText && (
-                <ResultContainer>
+                <div>
                     <h2>Decrypted Text:</h2>
-                    <ResultText>{decryptedText}</ResultText>
-                </ResultContainer>
+                    <p>{decryptedText}</p>
+                </div>
             )}
         </Container>
     );

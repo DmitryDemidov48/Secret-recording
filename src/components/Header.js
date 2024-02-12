@@ -60,10 +60,7 @@ const ButtonLink = styled(Link)`
     color: ${colors.darkGreen};
     border-color: ${colors.darkGreen};
   }
-
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
+  
 `;
 
 
@@ -74,11 +71,11 @@ const Header = () => {
             <SiteName>Secret recording</SiteName>
             <Navigation>
                 <ButtonLink to ="/Secret-recording">Home</ButtonLink>
-                <ButtonLink to="/login">Login</ButtonLink>
-                <ButtonLink to="/register">Register</ButtonLink>
+              {/*  <ButtonLink to="/login">Login</ButtonLink>*/}
+            {/*    <ButtonLink to="/register">Register</ButtonLink>*/}
                 <ButtonLink to="/info">Information</ButtonLink>
                 <ButtonLink to="/encoder">Encoder</ButtonLink>
-                <ButtonLink to="/decoder">Decoder</ButtonLink>
+               {/* <ButtonLink to="/decoder">Decoder</ButtonLink>*/}
             </Navigation>
         </HeaderContainer>
     );

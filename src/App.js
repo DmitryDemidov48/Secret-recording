@@ -13,11 +13,11 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/Secret-recording" element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+              {/*  <Route path="/login" element={<Login />} />*/}
+             {/*   <Route path="/register" element={<Register />} />*/}
                 <Route path="/info" element={<CipherInfo/>} />
                 <Route path="/encoder" element={<EncryptContainer/>} />
-                <Route path="/decoder" element={<DecryptContainer/>} />
+              {/*  <Route path="/decoder" element={<DecryptContainer/>} />*/}
             </Routes>
         </Router>
     );

@@ -67,6 +67,21 @@ const Button = styled.button`
   }
 `;
 
+// Стили для контейнера с результатом
+const ResultContainer = styled.div`
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  margin-top: 20px; /* Добавляем отступ сверху */
+`;
+
+// Стили для текста результата
+const ResultText = styled.p`
+  font-size: 16px;
+  color: #fff;
+`;
+
 // Функция для расшифровки текста по алгоритму шифра Виженера
 function vigenereDecipher(encryptedText, keyword) {
     let result = '';
@@ -124,15 +139,15 @@ const VigenereDecrypt = ({ onDecrypt }) => {
                 <Label htmlFor="keyword">Keyword:</Label>
                 <Input type="text" id="keyword" value={keyword} onChange={(e) => setKeyword(e.target.value)} />
                 <Label htmlFor="encryptedText">Encrypted Text:</Label>
-                <TextArea id="encryptedText" value={encryptedText} onChange={(e) => setEncryptedText(e.target.value)} />
+                <Input type="text" value={encryptedText} onChange={(e) => setEncryptedText(e.target.value)} />
                 <Button type="submit">Decrypt</Button>
             </Form>
             {/* Отображение расшифрованного текста */}
             {decryptedText && (
-                <div>
+                <ResultContainer>
                     <h2>Decrypted Text:</h2>
-                    <p>{decryptedText}</p>
-                </div>
+                    <ResultText>{decryptedText}</ResultText>
+                </ResultContainer>
             )}
         </Container>
     );

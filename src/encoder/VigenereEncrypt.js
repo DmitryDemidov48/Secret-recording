@@ -67,6 +67,21 @@ const Button = styled.button`
   }
 `;
 
+// Стили для контейнера с результатом
+const ResultContainer = styled.div`
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  margin-top: 20px; /* Добавляем отступ сверху */
+`;
+
+// Стили для текста результата
+const ResultText = styled.p`
+  font-size: 16px;
+  color: #fff;
+`;
+
 // Функция для шифрования текста по алгоритму шифра Виженера
 function vigenereEncrypt(text, keyword) {
     let result = '';
@@ -127,10 +142,10 @@ const VigenereEncrypt = ({ onEncrypt }) => {
                 <Button type="submit">Encrypt</Button>
             </Form>
             {encryptedText && (
-                <div>
+                <ResultContainer>
                     <h2>Encrypted Text:</h2>
-                    <p>{encryptedText}</p>
-                </div>
+                    <ResultText>{encryptedText}</ResultText>
+                </ResultContainer>
             )}
         </Container>
     );
