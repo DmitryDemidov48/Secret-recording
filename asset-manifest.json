@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Secret-recording/static/css/main.6a93bb29.css",
-    "main.js": "/Secret-recording/static/js/main.841e5cf2.js",
+    "main.js": "/Secret-recording/static/js/main.d734f772.js",
     "index.html": "/Secret-recording/index.html",
     "main.6a93bb29.css.map": "/Secret-recording/static/css/main.6a93bb29.css.map",
-    "main.841e5cf2.js.map": "/Secret-recording/static/js/main.841e5cf2.js.map"
+    "main.d734f772.js.map": "/Secret-recording/static/js/main.d734f772.js.map"
   },
   "entrypoints": [
     "static/css/main.6a93bb29.css",
-    "static/js/main.841e5cf2.js"
+    "static/js/main.d734f772.js"
   ]
 }
