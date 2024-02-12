@@ -7,7 +7,6 @@ import AtbashEncrypt from "../encoder/AtbashEncrypt";
 import MorseCipherEncrypt from "../encoder/MorseCipherEncrypt";
 import BaconEncrypt from "../encoder/BaconEncrypt";
 
-
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +16,11 @@ const Container = styled.div`
   @media (max-width: 768px) {
     justify-content: center;
     padding: 0 10px;
+  }
+
+  @media (min-width: 769px) {
+    margin-left: -10px;
+    margin-right: -10px;
   }
 `;
 
@@ -28,9 +32,14 @@ const Card = styled.div`
   border-radius: 10px;
   border: 1px solid #333;
 
-
   @media (max-width: 768px) {
     width: 100%;
+  }
+
+  @media (min-width: 769px) {
+    flex-basis: calc(50% - 20px);
+    margin-left: 10px; 
+    margin-right: 10px;
   }
 `;
 
